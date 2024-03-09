@@ -1,0 +1,637 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* border: 1px solid black; */
+}
+
+:root {
+  --bg-button: #6b7d69;
+  --secon-color: #e4ad54;
+  --font-paragraf: 1rem;
+  --font-title: 2.5rem;
+  --font-heandwriting: "Dancing Script", cursive;
+  --font-heandwriting-2: "Great Vibes", cursive;
+  --all-font: "Roboto Serif", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.full-container {
+  /* background-color: antiquewhite; */
+  width: 100%;
+  height: 6000px;
+  font-family: var(--all-font);
+  font-weight: 300;
+}
+
+.full-container .halaman-utama {
+  background: url(../gbr/bg1.svg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  overflow: visible;
+  animation: slideAnimasi 10s infinite;
+}
+
+.full-container .halaman-utama h1 {
+  padding-top: 240px;
+  font-size: 62px;
+  font-family: var(--font-heandwriting);
+  text-transform: capitalize;
+}
+
+.full-container .halaman-utama p {
+  font-size: var(--font-paragraf);
+}
+
+.full-container .halaman-utama p:nth-child(2) {
+  padding-top: 5px;
+}
+
+.full-container .halaman-utama p:nth-child(3) {
+  padding-top: 10px;
+}
+
+.full-container .halaman-utama label {
+  font-size: 25px;
+}
+
+.full-container .halaman-utama button {
+  padding: 10px 35px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  background-color: var(--bg-button);
+  cursor: pointer;
+  color: #fff;
+}
+
+.full-container .pengantin {
+  width: 100%;
+  text-align: center;
+  background-color: #fffbf9;
+  padding: 30px 0;
+}
+
+.full-container .pengantin .title {
+  font-size: var(--font-title);
+  padding: 10px;
+  color: var(--secon-color);
+  font-family: var(--font-heandwriting-2);
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.full-container .pengantin p:nth-child(2) {
+  padding-bottom: 20px;
+  line-height: 23px;
+  width: 90%;
+  margin: auto;
+  font-size: var(--font-paragraf);
+}
+
+.full-container .foto-mempelai {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.full-container .foto-mempelai div {
+  padding: 20px;
+}
+
+.full-container .foto-mempelai .nama {
+  padding: 20px;
+  font-size: 2rem;
+  font-family: var(--font-heandwriting-2);
+  font-weight: 200;
+  color: var(--secon-color);
+}
+
+.full-container .foto-mempelai div p {
+  line-height: 30px;
+  font-size: var(--font-paragraf);
+}
+
+.full-container p.bold {
+  line-height: 30px;
+  font-size: var(--font-paragraf);
+  font-weight: 600;
+}
+
+.full-container p.bold span {
+  font-family: var(--font-heandwriting);
+}
+
+.full-container .bunga-1 {
+  z-index: 1;
+  position: absolute;
+  right: -80px;
+  top: 10px;
+}
+
+.full-container .bunga-2 {
+  width: 110px;
+  position: absolute;
+  left: -80px;
+}
+
+.full-container img.bunga-1,
+.full-container img.bunga-2,
+.full-container img.bunga-3,
+.full-container img.bunga-4,
+.full-container img.bunga-5,
+.full-container img.bunga-6 {
+  width: 200px !important;
+}
+/* bunga */
+
+.full-container .foto-mempelai .pria,
+.full-container .foto-mempelai .wanita {
+  position: relative;
+  /* background-color: #6b7d69; */
+  margin: 10px;
+}
+
+.full-container .foto-mempelai .img,
+.full-container .foto-mempelai .img {
+  width: 250px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.full-container .foto-mempelai img.border-1 {
+  position: absolute;
+  right: 110px;
+  border-radius: 0;
+}
+
+.full-container .foto-mempelai img.border-2 {
+  position: absolute;
+  right: 110px;
+  /* right: 22%; */
+}
+
+.full-container .quotes {
+  background: url(../gambar/bg-2.png);
+  width: 100%;
+  padding: 80px 0;
+  text-align: center;
+  line-height: 25px;
+  background-color: #f1efef;
+}
+
+.full-container .quotes p {
+  padding: 10px 0;
+  width: 70%;
+  font-size: var(--font-paragraf);
+  margin: auto;
+}
+
+.full-container .waktu-tempat {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px 0;
+  /* height: 100%; */
+  overflow: visible;
+  position: relative;
+}
+
+/* bunga */
+.full-container .bunga-3 {
+  /* position: relative; */
+  width: 190px;
+  z-index: 1;
+  position: absolute;
+  right: -60px;
+  top: 150px;
+}
+
+.full-container .bunga-4 {
+  /* position: relative; */
+  width: 190px;
+  z-index: 1;
+  position: absolute;
+  left: -60px;
+  bottom: 150px;
+}
+/* bunga */
+
+.full-container .waktu-tempat h1 {
+  font-size: var(--font-title);
+  color: var(--secon-color);
+  overflow: visible;
+  font-family: var(--font-heandwriting-2);
+  font-weight: 100;
+}
+
+.full-container .waktu-tempat p {
+  padding: 5px 0;
+  width: 70%;
+  font-size: var(--font-paragraf);
+  margin: auto;
+}
+
+.full-container .waktu-tempat h3 {
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.full-container .waktu-tempat h3:nth-child(2) {
+  padding-top: 20px;
+}
+
+.full-container .waktu-tempat p.kecil {
+  font-style: italic;
+  line-height: 16px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.full-container .waktu-tempat a {
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: none;
+  font-size: var(--font-paragraf);
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--bg-button);
+  cursor: pointer;
+  color: #fff;
+}
+
+.full-container .waktu-tempat p.p-ucapan-kehadiran {
+  padding: 10px 0 30px;
+}
+
+.full-container .waktu-tempat h2 {
+  font-size: 25px;
+  line-height: 70px;
+  font-family: var(--font-heandwriting);
+  font-weight: 100;
+  color: var(--secon-color);
+}
+
+.full-container .waktu-tempat h1.h1-end {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.full-container .waktu-tempat .jam {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #6b7d69; */
+}
+
+.full-container .waktu-tempat .jam div {
+  margin: 0 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: var(--bg-button);
+  color: #fff;
+}
+
+/* galeri */
+.full-container .galeri {
+  text-align: center;
+  overflow: visible;
+}
+.full-container .galeri h1.title {
+  text-align: center;
+  /* overflow: visible !important; */
+  padding: 40px 0;
+  font-size: var(--font-title);
+  color: var(--secon-color);
+  font-family: var(--font-heandwriting-2);
+  font-weight: 100;
+}
+
+/* rsvp*/
+.full-container .rsvp {
+  width: 100%;
+  margin: auto;
+  background-color: #fffbf9;
+  display: inline-block;
+  padding: 20px;
+  overflow: visible;
+  position: relative;
+}
+
+/* bunga */
+.full-container .bunga-5 {
+  /* position: relative; */
+  width: 190px;
+  z-index: 1;
+  position: absolute;
+  right: -60px;
+  top: 150px;
+}
+
+.full-container img.bunga-5,
+.full-container img.bunga-6 {
+  border-radius: 0 !important;
+}
+
+.full-container .bunga-6 {
+  /* position: relative; */
+  width: 190px;
+  z-index: 1;
+  position: absolute;
+  left: -60px;
+  bottom: 150px;
+}
+/* bunga */
+
+.full-container .rsvp .all-input {
+  width: 60%;
+  margin: auto;
+  /* background-color: #54e4af; */
+  padding: 20px;
+  /* text-align: left; */
+}
+
+.full-container .rsvp .all-input h1.title {
+  font-size: var(--font-title);
+  color: var(--secon-color);
+  font-family: var(--font-heandwriting-2);
+  font-weight: 100;
+  text-align: center;
+  overflow: visible;
+  margin-bottom: 40px;
+}
+
+.full-container .rsvp .all-input .identitas input {
+  width: 100%;
+  padding: 9px 0 9px 10px;
+  background-color: #ecede9;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  border-bottom: 2px solid black;
+  margin-top: 7px;
+  margin-bottom: 30px;
+  font-family: var(--all-font);
+}
+
+.full-container .rsvp .all-input .identitas textarea {
+  width: 100%;
+  height: 120px;
+  background-color: #ecede9;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-family: var(--all-font);
+  padding: 10px;
+  border-bottom: 2px solid black;
+  margin-top: 7px;
+}
+
+.full-container .rsvp .all-input .identitas label {
+  margin-left: 10px;
+}
+
+.full-container .rsvp .all-input .kett {
+  margin-top: 20px;
+  /* background-color: #e4ad54; */
+}
+
+.full-container .rsvp .all-input .kett input {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.full-container .rsvp .all-input a {
+  padding: 10px 35px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px auto;
+  display: inline-block;
+  text-align: center !important;
+  background-color: var(--bg-button);
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* responsive */
+@media (max-width: 960px) {
+  .full-container .foto-mempelai img.border-1 {
+    /* right: 15%; */
+    right: 50px;
+  }
+
+  .full-container .foto-mempelai img.border-2 {
+    /* right: 15%; */
+    right: 50px;
+  }
+
+  /* bunga */
+  .full-container .bunga-1 {
+    right: -80px;
+    top: -50px;
+  }
+
+  .full-container .bunga-2 {
+    left: -80px;
+    bottom: 100px;
+  }
+
+  .full-container .bunga-3 {
+    right: -70px;
+    top: 50px;
+  }
+
+  .full-container .bunga-4 {
+    left: -70px;
+    bottom: 100px;
+  }
+
+  .full-container .bunga-5 {
+    right: -80px;
+    bottom: 100px;
+  }
+
+  .full-container .bunga-6 {
+    left: -80px;
+    bottom: 100px;
+  }
+
+  .full-container img.bunga-1,
+  .full-container img.bunga-2,
+  .full-container img.bunga-3,
+  .full-container img.bunga-4,
+  .full-container img.bunga-5,
+  .full-container img.bunga-6 {
+    width: 140px !important;
+  }
+  /* bunga */
+}
+
+@media (max-width: 700px) {
+  .full-container {
+    line-height: 25px;
+  }
+  .full-container .halaman-utama h1 {
+    padding: 340px 0 5px;
+    font-size: 42px;
+  }
+
+  .full-container .pengantin .title {
+    padding: 20px;
+  }
+
+  .full-container .foto-mempelai {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  /* bunga */
+  .full-container .bunga-1 {
+    right: -20px;
+    top: 50px;
+  }
+
+  .full-container .bunga-2 {
+    left: -20px;
+    bottom: 150px;
+  }
+
+  .full-container .bunga-3 {
+    right: -20px;
+    top: 90px;
+  }
+
+  .full-container .bunga-4 {
+    left: -20px;
+    bottom: 180px;
+  }
+
+  .full-container .bunga-5 {
+    right: -50px;
+    z-index: ;
+    bottom: 100px;
+  }
+
+  .full-container .bunga-6 {
+    left: -40px;
+    bottom: 0px;
+  }
+
+  .full-container img.bunga-1,
+  .full-container img.bunga-2,
+  .full-container img.bunga-3,
+  .full-container img.bunga-4,
+  .full-container img.bunga-5,
+  .full-container img.bunga-6 {
+    width: 100px !important;
+  }
+  /* bunga */
+
+  .full-container .foto-mempelai .nama {
+    padding: 10px;
+  }
+
+  .full-container .foto-mempelai img.border-1 {
+    /* right: 12%; */
+    right: 110px;
+  }
+
+  .full-container .foto-mempelai img.border-2 {
+    right: 110px;
+    /* right: 12%; */
+  }
+
+  .full-container .pengantin p:nth-child(2) {
+    width: 90%;
+    margin: auto;
+  }
+
+  .full-container .quotes p {
+    width: 90%;
+  }
+
+  .full-container .waktu-tempat {
+    overflow: visible;
+  }
+
+  .full-container .waktu-tempat p {
+    width: 90%;
+    /* line-height: 25px; */
+  }
+
+  .full-container .rsvp .all-input {
+    width: 100%;
+    margin: auto;
+    /* background-color: #54e4af; */
+    padding: 20px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 500px) {
+  .full-container .foto-mempelai img.border-1 {
+    /* right: 12%; */
+    right: 15%;
+  }
+
+  .full-container .foto-mempelai img.border-2 {
+    right: 15%;
+    /* right: 12%; */
+  }
+}
+
+@media (max-width: 400px) {
+  .full-container .foto-mempelai img.border-1 {
+    /* right: 12%; */
+    right: 12%;
+  }
+
+  .full-container .foto-mempelai img.border-2 {
+    right: 12%;
+    /* right: 12%; */
+  }
+}
+
+/* ANIMASI */
+@keyframes slideAnimasi {
+  0% {
+    background: url(../gbr/bg1.svg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  50% {
+    background: url(../gbr/bg2.svg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  100% {
+    background: url(../gbr/bg3.svg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  0 {
+    /* background: url(../gbr/bg1.svg); */
+  }
+}

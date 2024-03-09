@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet" />
+
+    <!-- animasi aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="full-container">
@@ -44,70 +47,80 @@
 
       <!-- section mempelai -->
       <section class="pengantin" id="-">
-        <h1 class="title">Om Swastyastu</h1>
-        <p>Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/Tuhan Yang Maha Esa kami bermaksud mengundang Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Pawiwahan (Pernikahan) Putra dan Putri kami.</p>
+        <h1 class="title" data-aos="fade-up" data-aos-duration="900">Om Swastyastu</h1>
+        <p data-aos="fade-up" data-aos-duration="900">
+          Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/Tuhan Yang Maha Esa kami bermaksud mengundang Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Pawiwahan (Pernikahan) Putra dan Putri kami.
+        </p>
         <div class="foto-mempelai">
-          <img class="bunga-1" src="gambar/bunga-kanan.png" alt="" />
+          <img class="bunga-1" src="gambar/bunga-kanan.png" alt="" data-aos="fade-up-left" data-aos-duration="900" />
 
           <div class="pria">
-            <img class="img" src="gbr/profil-pria.jpg" alt="mempelai" />
-            <img class="border-1 img" src="gambar/border.png" alt="" />
-            <h1 class="nama">I Made Adi Arta</h1>
-            <p>Putra Kedua dari pasangan</p>
-            <p class="bold">
+            <img class="img" src="gbr/profil-pria.jpg" alt="mempelai" data-aos="fade-up" data-aos-duration="900" />
+            <img class="border-1 img" src="gambar/border.png" alt="" data-aos="fade-up-left" data-aos-duration="900" />
+            <h1 class="nama" data-aos="fade-up" data-aos-duration="900">I Made Adi Arta</h1>
+            <p data-aos="fade-up" data-aos-duration="900">Putra Kedua dari pasangan</p>
+            <p class="bold" data-aos="fade-up" data-aos-duration="900">
               I Made Karna<br />
               <span>&</span><br />
               Ni Ketut Muspa
             </p>
-            <p>Dusun Koripan Tengah Kec. Banjarangkan Kab. Klungkung</p>
+            <p data-aos="fade-up" data-aos-duration="800">Dusun Koripan Tengah Kec. Banjarangkan Kab. Klungkung</p>
           </div>
           <div class="wanita">
-            <img class="img" src="gbr/profil-wanita.jpg" alt="mempelai" />
-            <img class="border-2 img" src="gambar/border.png" alt="" />
-            <h1 class="nama">Ni Wayan Lisdianti</h1>
-            <p>Putra Kedua dari pasangan</p>
-            <p class="bold">
+            <img class="img" src="gbr/profil-pria.jpg" alt="mempelai" data-aos="fade-up" data-aos-duration="900" />
+            <img class="border-2 img" src="gambar/border.png" alt="" data-aos="fade-up-left" data-aos-duration="900" />
+            <h1 class="nama" data-aos="fade-up" data-aos-duration="900">Ni Wayan Lisdianti</h1>
+            <p data-aos="fade-up" data-aos-duration="900">Putra Kedua dari pasangan</p>
+            <p class="bold" data-aos="fade-up" data-aos-duration="900">
               I Wayan Sudirja<br />
               <span>&</span><br />
               Ni Ketut Runti
             </p>
-            <p>Dusun Koripan Tengah Kec. Banjarangkan Kab. Klungkung</p>
+            <p data-aos="fade-up" data-aos-duration="900">Dusun Koripan Tengah Kec. Banjarangkan Kab. Klungkung</p>
           </div>
 
-          <img class="bunga-2" src="gambar/bunga-kiri.png" alt="" />
+          <img class="bunga-2" src="gambar/bunga-kiri.png" alt="" data-aos="fade-up-right" data-aos-duration="900" />
         </div>
+        <audio id="backgroundMusic" loop>
+          <source src="audio/backsound.mp3" type="audio/mpeg" />
+        </audio>
       </section>
+      <div class="icon-audio">
+        <img src="gbr/audio-on.png" id="icon-audios" onclick="audioPlayAndPause()" alt="" />
+      </div>
       <!-- Akhir section mempelai -->
 
       <!-- section quotes -->
       <section class="quotes">
-        <p>Ihaiva stam ma vi yaustam, visvam ayur vyasnutam, kridantau putrair naptrbhih, modamanau sve grhe. (Rg Veda X.85.42)</p>
-        <p>Wahai pasangan suami-isteri, semoga kalian tetap bersatu dan tidak pernah terpisahkan. Semoga kalian mencapai hidup penuh kebahagiaan, tinggal di rumah yang penuh kegembiraan bersama seluruh keturunanmu.</p>
+        <div class="info" data-aos="fade-up" data-aos-duration="900">
+          <p>Ihaiva stam ma vi yaustam, visvam ayur vyasnutam, kridantau putrair naptrbhih, modamanau sve grhe. (Rg Veda X.85.42)</p>
+          <p>Wahai pasangan suami-isteri, semoga kalian tetap bersatu dan tidak pernah terpisahkan. Semoga kalian mencapai hidup penuh kebahagiaan, tinggal di rumah yang penuh kegembiraan bersama seluruh keturunanmu.</p>
+        </div>
       </section>
       <!-- Akhir section quotes -->
 
       <!-- waktu dan tempat -->
       <section class="waktu-tempat">
-        <img class="bunga-3" src="gambar/bunga-kanan.png" alt="" />
-        <h1>Waktu & Tempat</h1>
-        <h3>Jumat</h3>
-        <p>24 November 2023</p>
-        <h3>Pukul</h3>
-        <p>16.00 WITA - Selesai</p>
-        <p class="kecil">Bertempat di</p>
-        <p>Dusun Koripan, Desa Koripan Tengah, Kec. Banjarangkan, Kab. Klungkung</p>
-        <a href="#">MAP LOKASI ACARA</a>
-        <p class="p-ucapan-kehadiran">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/ Ibu/ Saudara/i, berkenan hadir untuk memberikan doa restu.</p>
-        <p>Atas kehadiran dan doa restunya kami ucapkan terimakasih</p>
-        <h2>Om Shanti Shanti Shanti Om</h2>
+        <img class="bunga-3" src="gambar/bunga-kanan.png" alt="" data-aos="fade-up-left" data-aos-duration="900" />
+        <h1 data-aos="fade-up" data-aos-duration="900">Waktu & Tempat</h1>
+        <h3 data-aos="fade-up" data-aos-duration="900">Jumat</h3>
+        <p data-aos="fade-up" data-aos-duration="900">24 November 2023</p>
+        <h3 data-aos="fade-up" data-aos-duration="900">Pukul</h3>
+        <p data-aos="fade-up" data-aos-duration="900">16.00 WITA - Selesai</p>
+        <p class="kecil" data-aos="fade-up" data-aos-duration="900">Bertempat di</p>
+        <p data-aos="fade-up" data-aos-duration="900">Dusun Koripan, Desa Koripan Tengah, Kec. Banjarangkan, Kab. Klungkung</p>
+        <a href="#" data-aos="fade-up" data-aos-duration="900">MAP LOKASI ACARA</a>
+        <p class="p-ucapan-kehadiran" data-aos="fade-up" data-aos-duration="900">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/ Ibu/ Saudara/i, berkenan hadir untuk memberikan doa restu.</p>
+        <p data-aos="fade-up" data-aos-duration="900">Atas kehadiran dan doa restunya kami ucapkan terimakasih</p>
+        <h2 data-aos="fade-up" data-aos-duration="900">Om Shanti Shanti Shanti Om</h2>
 
-        <p class="bold">Kami yang berbahagia</p>
-        <p class="bold">
+        <p class="bold" data-aos="fade-up" data-aos-duration="900">Kami yang berbahagia</p>
+        <p class="bold" data-aos="fade-up" data-aos-duration="900">
           I Made Karna <br />
           <span>&</span> <br />
           I Wayan Sudirja
         </p>
-        <h1 class="h1-end">Hari Bahagia</h1>
+        <h1 class="h1-end" data-aos="fade-up" data-aos-duration="900">Hari Bahagia</h1>
 
         <div class="jam">
           <div class="Hari">
@@ -127,12 +140,12 @@
             <p>Detik</p>
           </div>
         </div>
-        <img class="bunga-4" src="gambar/bunga-kiri.png" alt="" />
+        <img class="bunga-4" src="gambar/bunga-kiri.png" alt="" data-aos="fade-up-right" data-aos-duration="900" />
       </section>
 
       <!-- section galeri -->
       <section class="galeri">
-        <h1 class="title">Momen Bahagia</h1>
+        <h1 class="title" data-aos="fade-up" data-aos-duration="900">Momen Bahagia</h1>
         <p>gamber</p>
         <div class="gambar">
           <img src="" alt="" />
@@ -142,10 +155,10 @@
 
       <!-- awal rspv -->
       <section class="rsvp">
-        <img class="bunga-5" src="gambar/bunga-kanan.png" alt="" />
+        <img class="bunga-5" src="gambar/bunga-kanan.png" alt="" data-aos="fade-up-left" data-aos-duration="900" />
 
         <div class="all-input">
-          <h1 class="title">Mohon Doa Restu</h1>
+          <h1 class="title" data-aos="fade-up" data-aos-duration="900">Mohon Doa Restu</h1>
 
           <form action="" class="identitas">
             <label for="name">Masukan namamu</label> <br />
@@ -166,10 +179,16 @@
           <a href="">Kirim Ucapkan</a>
         </div>
 
-        <img class="bunga-6" src="gambar/bunga-kiri.png" alt="" />
+        <img class="bunga-6" src="gambar/bunga-kiri.png" alt="" data-aos="fade-up-right" data-aos-duration="900" />
       </section>
       <!-- akhir rspv -->
     </div>
+
+    <!-- script animasi aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- link js -->
     <script src="script/script.js"></script>

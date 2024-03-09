@@ -1,8 +1,8 @@
 const rootElement = document.querySelector(":root");
-const haris = document.querySelector("#hari");
-const jams = document.querySelector("#jam");
-const menits = document.querySelector("#menit");
-const detiks = document.querySelector("#detik");
+const backgroundMusic = document.getElementById("backgroundMusic");
+const iconAudio = document.querySelector(".icon-audio");
+const iconn = document.querySelector(".con-audios");
+let isPlaying = false;
 
 function disableScroll() {
   // Simpan posisi scroll saat ini
@@ -21,8 +21,24 @@ function disableScroll() {
 function ableScroll() {
   window.onscroll = function () {};
   rootElement.style.scrollBehavior = "smooth";
+  backgroundMusic.play();
+  isPlaying = true;
+  iconAudio.style.display = "block";
 }
+
 disableScroll(); // Panggil fungsi untuk menonaktifkan scroll
+
+// audio on off
+function audioPlayAndPause() {
+  if (isPlaying) {
+    backgroundMusic.pause();
+    // iconn.src = "../gbr/audio-off";
+  } else {
+    backgroundMusic.play();
+  }
+
+  isPlaying = !isPlaying;
+}
 
 // nama tamu
 function getParameterByName(name, url) {

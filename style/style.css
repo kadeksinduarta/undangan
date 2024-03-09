@@ -16,21 +16,6 @@
   --all-font: "Roboto Serif", serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-/* 
-body.body {
-  height: 100vh;
-  overflow-y: hidden;
-}
-
-body.body.auto {
-  height: 100vh;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-} */
-
 .full-container {
   /* background-color: antiquewhite; */
   width: 100%;
@@ -120,6 +105,7 @@ body.body.auto {
   align-items: center;
   justify-content: center;
   padding: 40px 0;
+  overflow: visible;
 }
 
 .full-container .foto-mempelai div {
@@ -137,6 +123,7 @@ body.body.auto {
 .full-container .foto-mempelai div p {
   line-height: 30px;
   font-size: var(--font-paragraf);
+  overflow: visible;
 }
 
 .full-container p.bold {
@@ -177,6 +164,7 @@ body.body.auto {
   position: relative;
   /* background-color: #6b7d69; */
   margin: 10px;
+  overflow: visible;
 }
 
 .full-container .foto-mempelai .img,
@@ -196,6 +184,18 @@ body.body.auto {
   position: absolute;
   right: 110px;
   /* right: 22%; */
+}
+
+.full-container .icon-audio {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 10;
+  display: none;
+}
+
+.full-container .icon-audio img {
+  width: 50px;
 }
 
 .full-container .quotes {

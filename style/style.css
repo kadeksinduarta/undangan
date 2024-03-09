@@ -19,6 +19,17 @@
 html {
   scroll-behavior: smooth;
 }
+/* 
+body.body {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+body.body.auto {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+} */
 
 .full-container {
   /* background-color: antiquewhite; */
@@ -29,7 +40,7 @@ html {
 }
 
 .full-container .halaman-utama {
-  background: url(../gbr/bg1.svg);
+  background: url(../gbr/bg1.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -37,7 +48,9 @@ html {
   color: #fff;
   text-align: center;
   overflow: visible;
-  animation: slideAnimasi 10s infinite;
+  /* position: absolute; */
+  /* z-index: 100; */
+  animation: slideAnimasi 5s infinite;
 }
 
 .full-container .halaman-utama h1 {
@@ -59,8 +72,11 @@ html {
   padding-top: 10px;
 }
 
-.full-container .halaman-utama label {
+.full-container .halaman-utama label#untuk {
   font-size: 25px;
+  /* display: block; */
+  padding-top: 10px;
+  font-weight: bold;
 }
 
 .full-container .halaman-utama button {
@@ -611,21 +627,21 @@ html {
 /* ANIMASI */
 @keyframes slideAnimasi {
   0% {
-    background: url(../gbr/bg1.svg);
+    background: url(../gbr/bg1.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
   }
   50% {
-    background: url(../gbr/bg2.svg);
+    background: url(../gbr/bg2.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
   }
   100% {
-    background: url(../gbr/bg3.svg);
+    background: url(../gbr/bg3.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;

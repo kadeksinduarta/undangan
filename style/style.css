@@ -199,12 +199,13 @@
 }
 
 .full-container .quotes {
-  background: url(../gambar/bg-2.png);
+  background: url(../gbr/bg-2.png);
   width: 100%;
   padding: 80px 0;
   text-align: center;
   line-height: 25px;
   background-color: #f1efef;
+  overflow: visible;
 }
 
 .full-container .quotes p {
@@ -324,9 +325,13 @@
 
 /* galeri */
 .full-container .galeri {
-  text-align: center;
+  text-align: top;
   overflow: visible;
+  background: url(../gbr/bg-2.png);
+  background-color: #f1efef;
+  padding: 30px 0;
 }
+
 .full-container .galeri h1.title {
   text-align: center;
   /* overflow: visible !important; */
@@ -335,6 +340,36 @@
   color: var(--secon-color);
   font-family: var(--font-heandwriting-2);
   font-weight: 100;
+}
+
+.full-container .gambar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  overflow: visible;
+  gap: 20px;
+}
+.full-container .gambar .box {
+  overflow: visible;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.full-container .gambar .box img {
+  overflow: visible;
+  width: 300px;
+  vertical-align: middle;
+  /* width: 100%; */
+  margin: auto;
+  /* position: absolute; */
 }
 
 /* rsvp*/
@@ -504,7 +539,7 @@
   }
   .full-container .halaman-utama h1 {
     padding: 340px 0 5px;
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .full-container .pengantin .title {
@@ -601,6 +636,11 @@
 }
 
 @media (max-width: 500px) {
+  .full-container .halaman-utama h1 {
+    padding: 340px 0 5px;
+    font-size: 37px;
+  }
+
   .full-container .foto-mempelai img.border-1 {
     /* right: 12%; */
     right: 15%;
